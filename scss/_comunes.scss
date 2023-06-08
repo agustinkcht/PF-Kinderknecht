@@ -1,0 +1,127 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: $clr-principal;
+    color: $clr-whitish-1;
+}
+
+img {
+    max-width: 100%;
+}
+/* buena práctica */
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+/* para q el nav quede arriba */
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.519);
+    @include blur;
+    font-family: $font-montserrat;
+
+    .navbar-brand {
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+    
+    @media (min-width: 992) {
+        height: 8vh;
+    }
+ 
+    a, .navbar-nav .nav-item .active {
+    color: $clr-whitish-1;
+    font-size: 14px;
+}
+/* como el home tiene "active" necesité agregar todo ese choclo para que quede blanco tambien */
+}
+
+
+
+.navbar-nav li a {
+    &:hover {
+        color: rgb(240, 242, 255);
+    }
+}
+
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-start ;
+    margin-left: 3.3%;
+    height: 100%;
+}
+/* para cuando se despliega */
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin-right: 10rem;
+        margin-left: 5rem;
+    }
+}
+/* y en media armamos lo que sucede cuando sobrepasa los 992, menu horizontal */
+/* acomodamos el nav entero */
+
+
+.navbar-brand {
+    margin-left: 3%;
+}
+/* y estilito al universion */
+
+.navbar-toggler {
+    background-color: $clr-whitish-1;
+    opacity: 0.9;
+}
+
+
+
+/* --------------------------------------------- */
+
+/* main interpage (solo para acomodar visualmente las págs vacías) */
+.main-interpage {
+    margin-top: 1rem;
+    margin-bottom: 35rem;
+}
+
+.main-interpage h1, p {
+    margin-left: 1rem;
+}
+
+/* --------------------------------------------- */
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    background-color: $clr-whitish-1;
+    opacity: 0.9;
+
+    .container-redes a {
+        color: black;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 17px;
+        color: #161a20;
+        margin-top: 1rem;
+    }
+    span {
+        font-size: 13px;
+        color: #161a20;
+        margin-top: -3px;
+        margin-bottom: 7px;
+    }
+}

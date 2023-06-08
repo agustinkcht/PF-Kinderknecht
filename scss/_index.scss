@@ -1,0 +1,326 @@
+/* CAROUSEL */
+
+#carouselExampleCaptions {
+    margin-bottom: 3rem;
+
+    img {
+        object-fit: cover;
+        height: 94vh;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: transparent;
+    background-image: none;
+    }
+
+    .carousel-indicators {
+        opacity: 0.45;
+    }
+    /* pal indicador inferior */
+}
+
+.carousel-caption {
+    margin-bottom: 18px;
+
+    h5 {
+        font-size: 26px;
+    }
+
+    p {
+        display: none;
+    }
+       
+    .btn {
+        margin-top: 10px;
+        font-size: 20px;
+        background-color: $clr-mwm-soft;
+        color: $clr-principal;
+        border-color: #161a203e;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $clr-mwm-strong;
+            color: $clr-principal;
+            border-color: #161a203e;
+        }
+        &:active {
+            background-color: $clr-principal;
+            border-color: $clr-mwm-strong;
+            color: $clr-mwm-strong;
+        }
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .carousel-caption p {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 25px;
+        font-weight: 600;     
+    }   
+}
+
+@media(min-width: 992px) {
+    .carousel-caption h5 {
+        font-size: 28px;
+        font-weight: 600;     
+    }
+    .carousel-caption p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-caption h5 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    
+    .carousel-caption p {
+        font-size: 22px;
+    }
+}
+/* media para words del caru */
+
+
+
+
+/*-------BENEFITS SECTION---------*/
+
+#benefits-section {
+    background-color: $clr-black-fresh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+   
+    .bnf-icon-strip {
+        font-size: 65px;
+    }
+}
+
+
+
+
+/* -------CARDS SECTION----------- */
+
+.card-section {
+    margin-top: 2rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    .card-img{
+        border-radius: 10px;
+        margin-bottom: 6rem;
+    
+        -webkit-box-shadow: 0px 0px 24px 3px rgba(240,248,255,0.07);
+        -moz-box-shadow: 0px 0px 24px 3px rgba(240,248,255,0.07);
+        box-shadow: 0px 0px 24px 3px rgba(240,248,255,0.07);
+    }
+
+    .banner1, .banner2, .banner2b, .banner3 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 6rem;
+        font-size: 22px;
+        color: aliceblue;
+    }
+}
+/* estilo a las card-img*/
+
+
+
+@media(max-width: 768px) {
+    .card-section .banner2{
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .card-section .banner2b {
+        display: none;
+    }
+}
+/* media queries para banner 2/2b */
+
+
+
+
+@media (min-width: 992px) {
+    .card-section .banner1, .banner3 {
+        padding-left: 6rem;      
+    }
+    .card-section .banner2 {
+        padding-left: 2rem;
+        padding-right: 6rem;
+    }
+}
+/* media para adaptar bien los span */
+
+
+
+
+
+/* ---------------- */
+
+/* PLANS SECTION */
+
+/* .plans {
+    margin-top: 4rem;
+
+    h3 {
+        font-size: 28px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;  
+        margin-bottom: 1.5rem;
+    }
+
+    .plans-section {
+        display: grid;
+        width: 80vw;
+        margin: 0 auto;
+        height: 35rem;
+        color: black;
+
+        @media (min-width: 576px) {
+            width: 75vw;
+        }
+
+        grid-template-areas: 
+        "titleL"
+        "contentL"
+        "titleC"
+        "contentC"
+        "titleR"
+        "contentR"
+        ;
+
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 25% 8% 25% 8% 25% ;
+
+        justify-items: stretch;
+        align-items: stretch;
+
+        div {
+            border: 3px solid $clr-principal;
+            background-color: $clr-whitish-1;
+            text-align: center;
+
+            p {
+                margin-left: -3px;
+            }
+        }
+
+        .contentL, .contentC, .contentR {
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .plans-section {
+            display: grid;
+            width: 85vw;
+            margin: 0 auto;
+            height: 30rem;
+            color: black;
+        
+            grid-template-areas: 
+            "titleL titleC titleR"
+            "contentL contentC contentR"
+            ;
+        
+            grid-template-columns: 33% 34% 33%;
+            grid-template-rows: 12% 88%;
+        
+            justify-items: stretch;
+            align-items: stretch;
+        
+            div {
+                border: 3px solid $clr-principal;
+                background-color: $clr-whitish-1;
+                text-align: center;
+            }
+    
+            p {
+                margin-left: -6px;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        .plans-section {
+            width: 80vw;
+        }
+    }
+    @media (min-width: 1200px) {
+        .plans-section {
+            width: 80vw;
+        }
+    }
+    @media (min-width: 1400px) {
+        .plans-section {
+            width: 75vw;
+        }
+    }
+}
+
+
+.titleL {
+    grid-area: titleL;
+}
+
+.titleC {
+    grid-area: titleC;
+}
+
+.titleR {
+    grid-area: titleR;
+}
+
+.contentL {
+    grid-area: contentL;
+}
+
+.contentC {
+    grid-area: contentC;
+}
+
+.contentR {
+    grid-area: contentR;
+}
+
+.titleL, .titleC, .titleR {
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+
+.contentL, .contentC, .contentR {
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 17px;
+}
+*/
+
+

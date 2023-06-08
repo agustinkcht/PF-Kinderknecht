@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+    <!-- css propio -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Universion | Home</title>
+</head>
+
+<body>
+
+    <header>
+        
+        <!-- nav menu bootstrap -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Universion</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" 
+                    aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/download.html">Download</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/community.html">Community</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main>
+
+      <!-- carousel img bootstrap -->
+      <div id="carouselExampleCaptions" class="carousel slide"       data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active car-item1" data-bs-interval="4700">
+            <img src="./img/Studio Pics/studiopic1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item car-item2" data-bs-interval="4700">
+            <img src="./img/Studio Pics/studiopic5.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <div class="carousel-caption">
+          <h5>Be one with your projects & partners</h5>
+          <a href="./pages/contact.html" class="btn btn-primary">Get Started</a>
+          <p>A universe of posibilities available at the hand of the creators</p>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- seccion benefits -->
+      <section id="benefits-section">
+        <div class="row container bnf-icon-strip">
+          <div class="col-4 col-md-4 col-lg-4 col-xl-4 bnf-icon-1">
+            <iconify-icon icon="clarity:dashboard-line"></iconify-icon>
+          </div>
+          <div class="col-4 col-md-4 col-lg-4 col-xl-4 bnf-icon-2">
+            <iconify-icon icon="pepicons-pencil:people"></iconify-icon>
+          </div>
+          <div class="col-4 col-md-4 col-lg-4 col-xl-4 bnf-icon-3">
+            <iconify-icon icon="bi:phone"></iconify-icon>
+          </div>     
+        </div>
+        <div class="row container bnf-text-strip">
+          <span class="col-4 col-md-4 col-lg-4 col-xl-4">boost your productivity at amazing rates</span>
+          <span class="col-4 col-md-4 col-lg-4 col-xl-4">work engaged with partners all around the globe</span>
+          <span class="col-4 col-md-4 col-lg-4 col-xl-4">manage and control changes anywhere with the phone app</span>
+        </div>
+      </section>
+
+      </div>
+
+        <div class="row container card-section" style="overflow-x: hidden;">
+            <!-- sección imgs y banners -->
+
+            <!-- img1 -->
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1100">             
+             <img class="card-img" src="./img/cards/cardpic2b.jpg" alt="remote worker 1">             
+            </div>
+
+            <!-- banner1 -->
+            <div class="col-12 col-md-6 col-lg-7 col-xl-8 banner1" data-aos="fade-left" data-aos-duration="1100">
+              <span>Unleash your creativity from anywhere. We empower musicians and producers to work remotely and effortlessly bring their musical visions to life.</span>
+            </div>
+
+            <!-- banner2 -->
+            <div class="col-12 col-md-6 col-lg-7 col-xl-8 banner2" data-aos="fade-right" data-aos-duration="1300">
+              <span>Seamless online collaboration, where musicians and producers can effortlessly connect, share ideas, and create music together, regardless of distance or time zones.</span>
+            </div>
+
+            <!-- img2 -->
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-left" data-aos-duration="1300">             
+              <img class="card-img" src="./img/cards/cardpic1.jpg" alt="remote worker 1">             
+            </div>
+
+            <!-- banner2b -->
+            <div class="col-12 col-md-6 col-lg-7 col-xl-8 banner2b">
+              <span>Seamless online collaboration, where musicians and producers can effortlessly connect, share ideas, and create music together, regardless of distance or time zones.</span>
+            </div>
+
+            <!-- img3 -->
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1400">             
+              <img class="card-img" src="./img/cards/cardpic3.jpg" alt="sound engineer 2">             
+            </div>
+
+            <!-- banner3 -->
+            <div class="col-12 col-md-6 col-lg-7 col-xl-8 banner3" data-aos="fade-left" data-aos-duration="1400">
+              <span>From the home studio to professional engineers, universion provides a versatile platform that enhances workflow and streamlines the creative process.</span>
+            </div>
+        </div>
+
+        <!-- <div class="plans">
+
+          <h3>Our Plans</h3>
+
+          <section class="plans-section">
+  
+            <div class="titleL">
+              <span>title 1</span>
+            </div>
+  
+            <div class="titleC">
+              <span>title 2</span>
+            </div>
+  
+            <div class="titleR">
+              <span>title 3</span>
+            </div>
+  
+            <div class="contentL">
+              <p>- benefit 1</p>
+              <p>- benefit 2</p>
+              <p>- benefit 3</p>
+            </div>
+  
+            <div class="contentC">
+              <p>- benefit 1</p>
+              <p>- benefit 2</p>
+              <p>- benefit 3</p>             
+            </div>
+  
+            <div class="contentR">
+              <p>- benefit 1</p>
+              <p>- benefit 2</p>
+              <p>- benefit 3</p>
+            </div> -->
+                  
+          </section>
+
+        </div>
+
+       
+   
+    </main>
+
+    <footer>
+      <h5>follow us online</h5>
+
+      <div class="container-redes">
+          <a href="https://www.instagram.com/" target="_blank">
+              <iconify-icon icon="mdi:instagram"></iconify-icon>
+          </a>
+
+          <a href="https://www.facebook.com/" target="_blank">
+              <iconify-icon icon="uil:facebook"></iconify-icon>
+          </a>
+
+          <a href="#" target="_blank">
+              <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
+          </a>
+      </div>
+
+      <span>©Universion 2023 All Rights Reserved</span>
+    </footer>
+
+ <!-- Iconify -->
+ <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+ <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   
+ <!-- scripts bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+ 
+ <!-- scripts AOS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>AOS.init();</script>
+
+
+</body>
+</html>

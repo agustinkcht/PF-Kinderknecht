@@ -1,0 +1,80 @@
+
+.download-h1 {
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+
+#download-section {
+    background-color: $clr-black-fresh;
+    @include blur;
+    height: 50vh;
+
+    .download-icons {
+        color: $clr-whitish-1;
+        font-size: 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+            margin-top: 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: $clr-mwm-soft;
+            transition: 0.5s;
+
+            &:hover {
+                color: $clr-mwm-strong;
+                transform: scale(1.02);            
+            }
+        }        
+    }
+
+    .download-spans {
+        color: $clr-whitish-1;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .download-computer-text,
+        .download-phone-text {
+            text-align: center;
+        }               
+        .download-phone-text {
+            position: relative;
+            left: -30px
+        }
+    }   
+}
+
+
+#steps-section {
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    height: 30vh;
+    background-color: $clr-black-fresh;
+    color: $clr-whitish-1;
+
+    .dwnl-steps-left, .dwnl-steps-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;   
+        position: relative;         
+    } 
+    .dwnl-steps-left {
+        right: -19rem;
+    }
+    .dwnl-steps-right {
+        right: -8rem;
+    }
+}
+
+
+/*  justify-content: center;
+        align-items: flex-start;
+        text-align: center; */

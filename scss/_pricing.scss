@@ -1,0 +1,98 @@
+
+.upper-content {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#pricing-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 75vw;
+
+    .card {
+        width: 33.3%;
+        background-color: $clr-black-fresh;
+        @include blur; 
+        color: $clr-whitish-1;
+        border-radius: 15px;
+        border: solid 0.1px;
+        
+        transition: transform 2s;
+
+        .card-body {
+            .btn {
+                @include button-principal;
+            }
+            .plan-price {
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .price-number {
+                    font-size: 40px;
+                }
+                
+                .price-mo {
+                    margin-top: 15px;
+                }           
+            }
+
+            .plans-text-set {
+                display: flex;
+                justify-content: flex-start;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .plans-items {
+                margin-bottom: 15px;
+
+                .pts-none {
+                    color: transparent;
+                }
+
+            
+            }
+        }
+
+        .btn {
+            margin-bottom: 3px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+     
+    }
+}
+
+@media (min-width: 576px) {
+    #pricing-cards {
+        width: 60vw;
+    } 
+}  
+
+@media (min-width: 768px) {
+    #pricing-cards {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+        width: 75vw;
+    }
+}
+@media (min-width: 992px) {
+    #pricing-cards {
+        gap: 20px;
+        width: 65vw;
+    }     
+}
+@media (min-width: 1200px) {
+    #pricing-cards {
+        gap: 20px;
+        width: 60vw; 
+    }       
+}

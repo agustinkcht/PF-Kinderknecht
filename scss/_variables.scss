@@ -1,0 +1,39 @@
+/*COLORES*/
+$clr-principal: #161a20;
+$clr-black-op1: rgba(0, 0, 0, 0.104);
+$clr-black-fresh: rgba(44, 43, 43, 0.283);
+$clr-whitish-1: #efefe3;
+$clr-mwm-soft: rgb(224 198 143);
+$clr-mwm-strong: rgb(225, 176, 71);
+
+
+/*FUENTES*/
+$font-montserrat: 'Montserrat', sans-serif;
+
+
+/*MIXINS*/
+
+@mixin blur {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+@mixin button-principal {
+        background-color: $clr-mwm-soft;
+        color: $clr-principal;
+        border-color: #161a203e;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+
+        &:hover {
+            background-color: $clr-mwm-strong;
+            color: $clr-principal;
+        }
+
+        &:active {
+            background-color: $clr-principal;
+            color: $clr-mwm-strong;
+            border-color: $clr-mwm-strong;
+        }
+}
