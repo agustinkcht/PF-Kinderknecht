@@ -563,8 +563,6 @@ footer span {
   color: #efefe3;
   font-size: 10rem;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 #download-section .download-icons a {
   margin-top: 2rem;
@@ -577,19 +575,27 @@ footer span {
   color: rgb(225, 176, 71);
   transform: scale(1.02);
 }
+#download-section .download-icons a:active {
+  color: rgba(219, 205, 205, 0.647);
+}
+#download-section .download-icons .icon-computer {
+  display: none;
+}
+#download-section .download-icons .icon-phone {
+  margin: 0 auto;
+  margin-top: 3rem;
+}
 #download-section .download-spans {
   color: #efefe3;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-#download-section .download-spans .download-computer-text,
-#download-section .download-spans .download-phone-text {
-  text-align: center;
+#download-section .download-spans .download-computer-text {
+  display: none;
 }
 #download-section .download-spans .download-phone-text {
-  position: relative;
-  left: -30px;
+  text-align: center;
 }
 
 #steps-section {
@@ -600,23 +606,87 @@ footer span {
   background-color: rgba(44, 43, 43, 0.283);
   color: #efefe3;
 }
+#steps-section h2 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 25px;
+}
 #steps-section .dwnl-steps-left, #steps-section .dwnl-steps-right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  position: relative;
 }
 #steps-section .dwnl-steps-left {
-  right: -19rem;
+  display: none;
 }
 #steps-section .dwnl-steps-right {
-  right: -8rem;
+  margin: 0 auto;
+  width: 70%;
+  position: relative;
+  left: -20px;
 }
 
-/*  justify-content: center;
-        align-items: flex-start;
-        text-align: center; */
+/*MEDIA QUERIES*/
+@media (min-width: 576px) {
+  #steps-section .dwnl-steps-right {
+    left: 0px;
+  }
+}
+@media (min-width: 650px) {
+  #steps-section .dwnl-steps-right {
+    left: 10px;
+  }
+}
+@media (min-width: 710px) {
+  #steps-section .dwnl-steps-right {
+    left: 25px;
+  }
+}
+@media (min-width: 768px) {
+  #download-section .download-icons {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #download-section .download-icons .icon-computer {
+    display: block;
+  }
+  #download-section .download-icons .icon-phone {
+    margin: 0;
+    margin-top: 3rem;
+  }
+  #download-section .download-spans {
+    color: #efefe3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #download-section .download-spans .download-computer-text,
+  #download-section .download-spans .download-phone-text {
+    text-align: center;
+  }
+  #download-section .download-spans .download-computer-text {
+    display: block;
+  }
+  #steps-section .dwnl-steps-left {
+    display: inline-flex;
+    position: relative;
+    left: -30px;
+  }
+  #steps-section .dwnl-steps-right {
+    margin: 0;
+    width: 40%;
+    position: relative;
+    left: 0px;
+    right: -8px;
+  }
+}
+@media (min-width: 1016px) {
+  #steps-section .dwnl-steps-right {
+    width: 30%;
+  }
+}
 .com-intro-banner {
   background-color: rgba(44, 43, 43, 0.283);
   margin: 0 auto;
