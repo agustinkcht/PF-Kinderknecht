@@ -570,7 +570,7 @@ footer span {
 }
 
 #download-section {
-  background-color: rgba(44, 43, 43, 0.283);
+  background: linear-gradient(to bottom, rgba(44, 43, 43, 0.283), rgba(224, 198, 143, 0.047));
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   height: 50vh;
@@ -618,7 +618,7 @@ footer span {
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 10rem;
-  height: 30vh;
+  height: 35vh;
   background-color: rgba(44, 43, 43, 0.283);
   color: #efefe3;
 }
@@ -719,7 +719,7 @@ footer span {
   }
 }
 .com-intro-banner {
-  background-color: rgba(44, 43, 43, 0.283);
+  background: linear-gradient(to top, rgba(44, 43, 43, 0.283), rgba(44, 43, 43, 0.283), rgba(224, 198, 143, 0.09));
   margin: 0 auto;
   margin-top: 3rem;
 }
@@ -762,7 +762,7 @@ footer span {
 
 #com-rising-artists {
   margin-top: 4rem;
-  background-color: rgba(44, 43, 43, 0.283);
+  background: linear-gradient(to bottom, rgba(44, 43, 43, 0.283), rgba(224, 198, 143, 0.066));
 }
 #com-rising-artists .line {
   width: 88vw;

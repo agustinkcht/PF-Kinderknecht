@@ -9,7 +9,7 @@
 
 
 #download-section {
-    background-color: $clr-black-fresh;
+    background: linear-gradient(to bottom, $clr-black-fresh, rgba(224, 198, 143, 0.047));
     @include blur;
     height: 50vh;
 
@@ -67,7 +67,7 @@
     margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 10rem;
-    height: 30vh;
+    height: 35vh;
     background-color: $clr-black-fresh;
     color: $clr-whitish-1;
 

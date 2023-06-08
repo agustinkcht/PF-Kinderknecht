@@ -1,6 +1,7 @@
 
 .com-intro-banner {
-    background-color: $clr-black-fresh;
+    // background-color: $clr-black-fresh;
+    background: linear-gradient(to top, $clr-black-fresh, $clr-black-fresh, rgba(224, 198, 143, 0.090));
     margin: 0 auto;
     margin-top: 3rem;
 
@@ -40,6 +41,7 @@
     }
 }
 
+
 .ra-h2 {
     margin-top: 4rem;
     margin-bottom: -3rem;
@@ -51,7 +53,8 @@
 
 #com-rising-artists {
     margin-top: 4rem;
-    background-color: $clr-black-fresh;
+    // background-color: $clr-black-fresh;
+    background: linear-gradient(to bottom, $clr-black-fresh, rgba(224, 198, 143, 0.066));
 
     .line {
         width: 88vw;
