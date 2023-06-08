@@ -99,6 +99,7 @@
 
 /*MEDIA QUERIES*/
 
+
 @media (min-width: 576px) {
     #steps-section {
         .dwnl-steps-right {
@@ -163,7 +164,9 @@
         .dwnl-steps-left {
             display: inline-flex;
             position: relative;
-            left: -30px;
+            width: 35%;
+            left: -60px;
+            bottom: -15px
             
         }
         .dwnl-steps-right {
@@ -180,6 +183,27 @@
     #steps-section {
         .dwnl-steps-right {
             width: 30%;
+        }
+
+        .dwnl-steps-left {
+            left: -42px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #steps-section {
+
+        .dwnl-steps-left {
+            left: -30px;
+        }
+    }
+}
+@media (min-width: 1400px) {
+    #steps-section {
+
+        .dwnl-steps-left {
+            left: -15px;
         }
     }
 }
