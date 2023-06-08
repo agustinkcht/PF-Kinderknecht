@@ -691,53 +691,10 @@ footer span {
   margin-top: 2rem;
   gap: 2rem;
 }
-.contact-forms .sign-up-form, .contact-forms .login-form {
-  margin-top: 2rem;
-  width: 70%;
-  margin: 0 auto;
-  border: solid 1px rgba(255, 255, 255, 0.463);
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 24px 3px rgba(240, 248, 255, 0.02);
-  -moz-box-shadow: 0px 0px 24px 3px rgba(240, 248, 255, 0.02);
-  box-shadow: 0px 0px 24px 3px rgba(240, 248, 255, 0.02);
-}
-@media (min-width: 576px) {
-  .contact-forms .sign-up-form, .contact-forms .login-form {
-    width: 60%;
-  }
-}
-@media (min-width: 768px) {
-  .contact-forms .sign-up-form, .contact-forms .login-form {
-    width: 55%;
-  }
-}
-
-/*seteo de medidas desde mini, luego media queries para acomodar a breakpoints*/
-@media (min-width: 992px) {
-  .contact-forms {
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 0.7rem;
-  }
-  .contact-forms .sign-up-form, .contact-forms .login-form {
-    width: 37%;
-  }
-  .contact-forms .sign-up-form h3, .contact-forms .login-form h3 {
-    margin-bottom: 20px;
-  }
-  .contact-forms .login-form {
-    height: 100%;
-  }
-}
-@media (min-width: 992px) and (min-width: 1200px) {
-  .contact-forms .sign-up-form, .contact-forms .login-form {
-    width: 34%;
-  }
-}
-.form-inputs {
+.contact-forms .form-inputs {
   padding: 20px;
 }
-.form-inputs .btn {
+.contact-forms .form-inputs .btn {
   margin-top: 10px;
   font-size: 19px;
   background-color: rgb(224, 198, 143);
@@ -747,16 +704,74 @@ footer span {
   cursor: pointer;
   width: 100%;
 }
-.form-inputs .btn:hover {
+.contact-forms .form-inputs .btn:hover {
   background-color: rgb(225, 176, 71);
   color: #161a20;
 }
-.form-inputs .btn:active {
+.contact-forms .form-inputs .btn:active {
   background-color: #161a20;
   color: rgb(225, 176, 71);
   border-color: rgb(225, 176, 71);
 }
+.contact-forms .sign-up-form, .contact-forms .login-form {
+  margin-top: 2rem;
+  width: 85%;
+  margin: 0 auto;
+  border: solid 1px rgba(255, 255, 255, 0.463);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 24px 3px rgba(240, 248, 255, 0.02);
+  -moz-box-shadow: 0px 0px 24px 3px rgba(240, 248, 255, 0.02);
+  box-shadow: 0px 0px 24px 3px rgba(240, 248, 255, 0.02);
+}
 
+/*media mobile y tablet*/
+@media (min-width: 576px) {
+  .contact-forms .sign-up-form, .contact-forms .login-form {
+    width: 68%;
+  }
+}
+@media (min-width: 650px) {
+  .contact-forms .sign-up-form, .contact-forms .login-form {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  .contact-forms .sign-up-form, .contact-forms .login-form {
+    width: 55%;
+  }
+}
+/*medias desktop*/
+@media (min-width: 992px) {
+  .contact-forms {
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 0rem;
+  }
+  .contact-forms .sign-up-form, .contact-forms .login-form {
+    width: 33.5%;
+  }
+  .contact-forms .sign-up-form h3, .contact-forms .login-form h3 {
+    margin-bottom: 20px;
+  }
+  .contact-forms .login-form {
+    height: 100%;
+  }
+}
+@media (min-width: 1130px) {
+  .contact-forms .sign-up-form, .contact-forms .login-form {
+    width: 29.9%;
+  }
+}
+@media (min-width: 1250px) {
+  .contact-forms .sign-up-form, .contact-forms .login-form {
+    width: 27.5%;
+  }
+}
+@media (min-width: 1400px) {
+  .contact-forms .sign-up-form, .contact-forms .login-form {
+    width: 25%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
