@@ -466,14 +466,24 @@ footer span {
 }
 
 /*MEDIAS MOBILE*/
+@media (min-width: 380px) {
+  #pricing-cards {
+    width: 78vw;
+  }
+}
+@media (min-width: 450px) {
+  #pricing-cards {
+    width: 70vw;
+  }
+}
 @media (min-width: 576px) {
   #pricing-cards {
-    width: 80vw;
+    width: 61vw;
   }
 }
 @media (min-width: 650px) {
   #pricing-cards {
-    width: 72vw;
+    width: 55vw;
   }
 }
 /*MEDIAS TABLET Y DESKTOP*/
@@ -503,7 +513,7 @@ footer span {
 @media (min-width: 894px) {
   #pricing-cards {
     gap: 20px;
-    width: 86vw;
+    width: 85vw;
   }
 }
 @media (min-width: 992px) {
