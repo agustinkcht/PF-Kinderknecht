@@ -405,10 +405,9 @@ footer span {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 75vw;
+  width: 85vw;
 }
 #pricing-cards .card {
-  width: 33.3%;
   background-color: rgba(44, 43, 43, 0.283);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -466,26 +465,72 @@ footer span {
   transform: scale(1.05);
 }
 
+/*MEDIAS MOBILE*/
 @media (min-width: 576px) {
   #pricing-cards {
-    width: 60vw;
+    width: 80vw;
   }
 }
+@media (min-width: 650px) {
+  #pricing-cards {
+    width: 72vw;
+  }
+}
+/*MEDIAS TABLET Y DESKTOP*/
 @media (min-width: 768px) {
   #pricing-cards {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
-    width: 75vw;
+    width: 95vw;
+  }
+  #pricing-cards .card {
+    width: 33.3%;
+  }
+  #pricing-cards .card .card-body .plans-text-set {
+    font-size: 15px;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 825px) {
+  #pricing-cards {
+    width: 93vw;
+  }
+  .plans-text-set {
+    font-size: 16px;
+  }
+}
+@media (min-width: 894px) {
+  #pricing-cards {
+    gap: 20px;
+    width: 86vw;
   }
 }
 @media (min-width: 992px) {
   #pricing-cards {
     gap: 20px;
-    width: 65vw;
+    width: 78vw;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1090px) {
+  #pricing-cards {
+    gap: 20px;
+    width: 73vw;
+  }
+}
+@media (min-width: 1190px) {
+  #pricing-cards {
+    gap: 20px;
+    width: 68vw;
+  }
+}
+@media (min-width: 1300px) {
+  #pricing-cards {
+    gap: 20px;
+    width: 64vw;
+  }
+}
+@media (min-width: 1400px) {
   #pricing-cards {
     gap: 20px;
     width: 60vw;
@@ -493,8 +538,9 @@ footer span {
 }
 .download-h1 {
   margin: 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #download-section {
