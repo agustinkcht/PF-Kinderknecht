@@ -37,3 +37,14 @@ $font-montserrat: 'Montserrat', sans-serif;
             border-color: $clr-mwm-strong;
         }
 }
+
+@mixin black-fresh-orange {
+    background: linear-gradient(to bottom, $clr-black-fresh, rgba(224, 198, 143, 0.066));
+}
+@mixin black-fresh-orange2{
+    background: linear-gradient(to bottom, $clr-black-fresh, rgba(36, 31, 20, 0));
+    
+}
+@mixin black-fresh-orange3{
+    background: rgba(51, 44, 31, 0.033);
+}
