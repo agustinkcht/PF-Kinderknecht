@@ -2,7 +2,6 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: $clr-principal;
     color: $clr-whitish-1;
-
 }
 
 img {
@@ -22,7 +21,7 @@ header {
 .navbar {
     background-color: rgba(0, 0, 0, 0.519);
     @include blur;
-    font-family: $font-montserrat;
+    font-family: 'Source Sans Pro', sans-serif;
 
     .navbar-brand {
         font-size: 18px;
