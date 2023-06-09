@@ -280,153 +280,6 @@ footer span {
   }
 }
 /* media para adaptar bien los span */
-/* ---------------- */
-/* PLANS SECTION */
-/* .plans {
-    margin-top: 4rem;
-
-    h3 {
-        font-size: 28px;
-        font-weight: 700;
-        display: flex;
-        justify-content: center;  
-        margin-bottom: 1.5rem;
-    }
-
-    .plans-section {
-        display: grid;
-        width: 80vw;
-        margin: 0 auto;
-        height: 35rem;
-        color: black;
-
-        @media (min-width: 576px) {
-            width: 75vw;
-        }
-
-        grid-template-areas: 
-        "titleL"
-        "contentL"
-        "titleC"
-        "contentC"
-        "titleR"
-        "contentR"
-        ;
-
-        grid-template-columns: 100%;
-        grid-template-rows: 8% 25% 8% 25% 8% 25% ;
-
-        justify-items: stretch;
-        align-items: stretch;
-
-        div {
-            border: 3px solid $clr-principal;
-            background-color: $clr-whitish-1;
-            text-align: center;
-
-            p {
-                margin-left: -3px;
-            }
-        }
-
-        .contentL, .contentC, .contentR {
-            margin-bottom: 0.8rem;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .plans-section {
-            display: grid;
-            width: 85vw;
-            margin: 0 auto;
-            height: 30rem;
-            color: black;
-
-            grid-template-areas: 
-            "titleL titleC titleR"
-            "contentL contentC contentR"
-            ;
-
-            grid-template-columns: 33% 34% 33%;
-            grid-template-rows: 12% 88%;
-
-            justify-items: stretch;
-            align-items: stretch;
-
-            div {
-                border: 3px solid $clr-principal;
-                background-color: $clr-whitish-1;
-                text-align: center;
-            }
-
-            p {
-                margin-left: -6px;
-            }
-        }
-    }
-    @media (min-width: 992px) {
-        .plans-section {
-            width: 80vw;
-        }
-    }
-    @media (min-width: 1200px) {
-        .plans-section {
-            width: 80vw;
-        }
-    }
-    @media (min-width: 1400px) {
-        .plans-section {
-            width: 75vw;
-        }
-    }
-}
-
-
-.titleL {
-    grid-area: titleL;
-}
-
-.titleC {
-    grid-area: titleC;
-}
-
-.titleR {
-    grid-area: titleR;
-}
-
-.contentL {
-    grid-area: contentL;
-}
-
-.contentC {
-    grid-area: contentC;
-}
-
-.contentR {
-    grid-area: contentR;
-}
-
-.titleL, .titleC, .titleR {
-    border-top-left-radius:10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 23px;
-}
-
-
-.contentL, .contentC, .contentR {
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-weight: 600;
-    font-size: 17px;
-}
-*/
 .upper-content {
   text-align: center;
   margin-top: 3rem;
@@ -779,12 +632,97 @@ footer span {
 }
 .com-intro-banner .com-intro-banner-pic {
   object-fit: cover;
-  width: 27vw;
+  width: 110px;
   display: flex;
   align-items: center;
 }
 
+.ra-h2 {
+  background-color: rgba(142, 97, 30, 0.356);
+  margin-top: 4rem;
+  padding: 2px;
+  position: relative;
+  right: -2rem;
+  display: inline-block;
+  border: solid 1px;
+  border-color: beige;
+  border-radius: 6px;
+}
+.ra-h2 h2 {
+  font-size: 13px;
+  padding-top: 7px;
+}
+
+#com-rising-artists {
+  margin-top: 4rem;
+  background: linear-gradient(to bottom, rgba(44, 43, 43, 0.283), rgba(224, 198, 143, 0.026));
+}
+#com-rising-artists .line {
+  width: 88vw;
+  margin: 0 auto;
+  position: relative;
+  left: -38px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#com-rising-artists .rising-artist {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#com-rising-artists .rising-artist img {
+  border-radius: 20px;
+  object-fit: cover;
+  padding: 10px;
+  margin-left: 2rem;
+  height: 23vhvh;
+}
+#com-rising-artists .rising-artist .artist-pic1, #com-rising-artists .rising-artist .artist-pic2, #com-rising-artists .rising-artist .artist-pic3 {
+  width: 260px;
+}
+#com-rising-artists .rising-artist .artist-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  justify-content: center;
+  font-size: 12px;
+  width: 270px;
+}
+
+#user-testimonials {
+  margin-top: 3rem;
+}
+#user-testimonials .ut-cards {
+  display: flex;
+  justify-content: space-around;
+}
+#user-testimonials .ut-cards .card {
+  background-color: rgb(215, 215, 206);
+  color: #161a20;
+  width: 22%;
+}
+#user-testimonials .ut-cards .card .card-text {
+  width: 97%;
+  position: relative;
+  bottom: -5px;
+}
+#user-testimonials .ut-cards .card span {
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------*/
 /*MEDIA QUERIES*/
+@media (min-width: 370px) {
+  .com-intro-banner .com-intro-banner-pic {
+    object-fit: cover;
+    width: 130px;
+    display: flex;
+    align-items: center;
+  }
+}
 @media (min-width: 400px) {
   .com-intro-banner .com-intro-banner-txt h1 {
     font-size: 22px;
@@ -806,6 +744,15 @@ footer span {
   .com-intro-banner .com-intro-banner-txt span {
     font-size: 12px;
   }
+  .com-intro-banner-pic {
+    object-fit: cover;
+    width: 150px;
+    display: flex;
+    align-items: center;
+  }
+  #com-rising-artists .rising-artist .artist-pic1, #com-rising-artists .rising-artist .artist-pic2, #com-rising-artists .rising-artist .artist-pic3 {
+    width: 290px;
+  }
 }
 @media (min-width: 521px) {
   .com-intro-banner .com-intro-banner-txt h1 {
@@ -816,6 +763,15 @@ footer span {
   }
   .com-intro-banner .com-intro-banner-txt span {
     font-size: 12px;
+  }
+  .com-intro-banner .com-intro-banner-pic {
+    object-fit: cover;
+    width: 27vw;
+    display: flex;
+    align-items: center;
+  }
+  #com-rising-artists .rising-artist .artist-pic1, #com-rising-artists .rising-artist .artist-pic2, #com-rising-artists .rising-artist .artist-pic3 {
+    width: 300px;
   }
 }
 @media (min-width: 576px) {
@@ -829,6 +785,31 @@ footer span {
   .com-intro-banner .com-intro-banner-txt span {
     font-size: 15px;
   }
+  .ra-h2 {
+    border-radius: 10px;
+  }
+  .ra-h2 h2 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  #com-rising-artists .rising-artist {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: row;
+  }
+  #com-rising-artists .rising-artist img {
+    width: 20vw;
+    height: 23vhvh;
+  }
+  #com-rising-artists .rising-artist .artist-pic1, #com-rising-artists .rising-artist .artist-pic2, #com-rising-artists .rising-artist .artist-pic3 {
+    width: 241px;
+    height: 150px;
+  }
+  #com-rising-artists .rising-artist .artist-txt {
+    font-size: 16px;
+    width: 60%;
+  }
 }
 @media (min-width: 808px) {
   .com-intro-banner .com-intro-banner-txt h1 {
@@ -837,6 +818,15 @@ footer span {
   .com-intro-banner .com-intro-banner-txt p {
     font-size: 16.5px;
     width: 95%;
+  }
+  .ra-h2 {
+    margin-top: 4rem;
+    margin-bottom: -3rem;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .ra-h2 h2 {
+    font-size: 16px;
   }
 }
 @media (min-width: 941px) {
@@ -847,11 +837,23 @@ footer span {
     font-size: 18px;
     width: 95%;
   }
+  .ra-h2 h2 {
+    font-size: 18px;
+  }
+  #com-rising-artists .rising-artist .artist-txt {
+    width: 65%;
+  }
 }
 @media (min-width: 1060px) {
   .com-intro-banner .com-intro-banner-txt h1 {
     font-size: 40px;
     top: -40px;
+  }
+  .com-intro-banner .com-intro-banner-txt span {
+    font-size: 16px;
+  }
+  .ra-h2 h2 {
+    font-size: 22px;
   }
 }
 @media (min-width: 1150px) {
@@ -862,6 +864,9 @@ footer span {
   .com-intro-banner .com-intro-banner-txt p {
     font-size: 19.5px;
   }
+  .ra-h2 h2 {
+    font-size: 24px;
+  }
 }
 @media (min-width: 1270px) {
   .com-intro-banner .com-intro-banner-txt h1 {
@@ -870,6 +875,13 @@ footer span {
   }
   .com-intro-banner .com-intro-banner-txt p {
     font-size: 19.5px;
+  }
+  .com-intro-banner .com-intro-banner-txt span {
+    font-size: 18px;
+  }
+  .ra-h2 h2 {
+    font-size: 25px;
+    padding-top: 7px;
   }
 }
 @media (min-width: 1333px) {
@@ -891,77 +903,6 @@ footer span {
     font-size: 22px;
   }
 }
-.ra-h2 {
-  background-color: rgba(142, 97, 30, 0.356);
-  margin-top: 4rem;
-  margin-bottom: -3rem;
-  padding: 8px;
-  position: relative;
-  right: -2rem;
-  display: inline-block;
-  border: solid 1px;
-  border-color: beige;
-  border-radius: 10px;
-}
-.ra-h2 h2 {
-  font-size: 25px;
-  padding-top: 7px;
-}
-
-#com-rising-artists {
-  margin-top: 4rem;
-  background: linear-gradient(to bottom, rgba(44, 43, 43, 0.283), rgba(224, 198, 143, 0.026));
-}
-#com-rising-artists .line {
-  width: 88vw;
-  margin: 0 auto;
-  position: relative;
-  left: -38px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-#com-rising-artists .rising-artist {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-#com-rising-artists .rising-artist img {
-  border-radius: 20px;
-  object-fit: cover;
-  width: 20vw;
-  padding: 10px;
-  margin-left: 2rem;
-  height: 23vhvh;
-}
-#com-rising-artists .rising-artist .artist-pic1, #com-rising-artists .rising-artist .artist-pic2, #com-rising-artists .rising-artist .artist-pic3 {
-  width: 241px;
-  height: 150px;
-}
-#com-rising-artists .rising-artist .artist-txt {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  justify-content: center;
-  font-size: 16px;
-  position: relative;
-}
-
-#user-testimonials {
-  margin-top: 3rem;
-}
-#user-testimonials .ut-cards {
-  display: flex;
-  justify-content: space-around;
-}
-#user-testimonials .ut-cards .card {
-  width: 22%;
-}
-#user-testimonials .ut-cards .card .card-text {
-  width: 97%;
-  position: relative;
-  bottom: -5px;
-}
-
 /* CONTACT */
 .contact-forms {
   display: flex;
