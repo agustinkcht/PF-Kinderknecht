@@ -198,7 +198,7 @@ footer span {
 /*-------BENEFITS SECTION---------*/
 #benefits-section {
   background-color: rgba(44, 43, 43, 0.283);
-  height: 230px;
+  height: 225px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -605,7 +605,7 @@ footer span {
 }
 .com-intro-banner {
   background: linear-gradient(to top, rgba(44, 43, 43, 0.283), rgba(44, 43, 43, 0.283), rgba(224, 198, 143, 0.09));
-  margin-top: 3rem;
+  width: 100%;
 }
 .com-intro-banner .com-intro-banner-txt {
   color: aliceblue;
@@ -662,12 +662,12 @@ footer span {
 #com-rising-artists {
   margin-top: 4rem;
   background: linear-gradient(to bottom, rgba(44, 43, 43, 0.283), rgba(224, 198, 143, 0.026));
+  width: 100%;
+  overflow: hidden;
 }
 #com-rising-artists .line {
-  width: 88vw;
+  width: 95.5%;
   margin: 0 auto;
-  position: relative;
-  left: -38px;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -683,7 +683,7 @@ footer span {
   object-fit: cover;
   padding: 10px;
   margin-left: 2rem;
-  height: 23vhvh;
+  height: 23vh;
 }
 #com-rising-artists .rising-artist .artist-pic1, #com-rising-artists .rising-artist .artist-pic2, #com-rising-artists .rising-artist .artist-pic3 {
   width: 260px;
@@ -731,24 +731,18 @@ footer span {
 }
 @media (min-width: 400px) {
   .com-intro-banner .com-intro-banner-txt h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
   .com-intro-banner .com-intro-banner-txt p {
-    font-size: 11.5px;
+    font-size: 15px;
   }
   .com-intro-banner .com-intro-banner-txt span {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 @media (min-width: 460px) {
   .com-intro-banner .com-intro-banner-txt h1 {
     font-size: 28px;
-  }
-  .com-intro-banner .com-intro-banner-txt p {
-    font-size: 13px;
-  }
-  .com-intro-banner .com-intro-banner-txt span {
-    font-size: 12px;
   }
   .com-intro-banner-pic {
     object-fit: cover;
@@ -763,12 +757,6 @@ footer span {
 @media (min-width: 521px) {
   .com-intro-banner .com-intro-banner-txt h1 {
     font-size: 30px;
-  }
-  .com-intro-banner .com-intro-banner-txt p {
-    font-size: 14px;
-  }
-  .com-intro-banner .com-intro-banner-txt span {
-    font-size: 12px;
   }
   .com-intro-banner .com-intro-banner-pic {
     object-fit: cover;
