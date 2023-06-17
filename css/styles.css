@@ -198,7 +198,7 @@ footer span {
 /*-------BENEFITS SECTION---------*/
 #benefits-section {
   background-color: rgba(44, 43, 43, 0.283);
-  height: 28vh;
+  height: 230px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -215,13 +215,16 @@ footer span {
 
 @media (min-width: 500px) {
   #benefits-section {
-    height: 30vh;
+    height: 220px;
   }
   #benefits-section .bnf-text-strip {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) {
+  #benefits-section {
+    height: 210px;
+  }
   #benefits-section .bnf-text-strip {
     font-size: 18px;
   }

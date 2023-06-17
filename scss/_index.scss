@@ -105,7 +105,7 @@
 
 #benefits-section {
     background-color: $clr-black-fresh;
-    height: 28vh;
+    height: 230px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -124,7 +124,7 @@
 
 @media (min-width: 500px) {
     #benefits-section {
-        height: 30vh;
+        height: 220px;
         .bnf-text-strip {
             font-size: 16px;
         }
@@ -133,6 +133,7 @@
 
 @media (min-width: 768px) {
     #benefits-section {
+        height: 210px;
         .bnf-text-strip {
             font-size: 18px;
         }
