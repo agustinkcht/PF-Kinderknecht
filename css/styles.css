@@ -288,6 +288,9 @@ footer span {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.upper-content h1 {
+  font-weight: 600;
+}
 
 #pricing-cards {
   display: flex;
@@ -452,6 +455,7 @@ footer span {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  font-weight: 600;
 }
 
 #download-section {
@@ -719,7 +723,6 @@ footer span {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------*/
 /*MEDIA QUERIES*/
 @media (min-width: 400px) {
   .com-intro-banner .com-intro-banner-txt h1 {
@@ -898,7 +901,7 @@ footer span {
   font-weight: 600;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact-forms {
