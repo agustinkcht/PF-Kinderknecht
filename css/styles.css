@@ -721,14 +721,6 @@ footer span {
 
 /*--------------------------------------------------------------*/
 /*MEDIA QUERIES*/
-@media (min-width: 370px) {
-  .com-intro-banner .com-intro-banner-pic {
-    object-fit: cover;
-    width: 130px;
-    display: flex;
-    align-items: center;
-  }
-}
 @media (min-width: 400px) {
   .com-intro-banner .com-intro-banner-txt h1 {
     font-size: 24px;
@@ -754,7 +746,7 @@ footer span {
     width: 290px;
   }
 }
-@media (min-width: 521px) {
+@media (min-width: 500px) {
   .com-intro-banner .com-intro-banner-txt h1 {
     font-size: 30px;
   }
