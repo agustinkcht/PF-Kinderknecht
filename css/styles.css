@@ -702,13 +702,13 @@ footer span {
   margin-top: 3rem;
 }
 #user-testimonials .ut-cards {
-  display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
+  width: 80vw;
 }
 #user-testimonials .ut-cards .card {
   background-color: rgb(215, 215, 206);
   color: #161a20;
-  width: 22%;
+  text-align: center;
 }
 #user-testimonials .ut-cards .card .card-text {
   width: 97%;
@@ -730,6 +730,9 @@ footer span {
   }
   .com-intro-banner .com-intro-banner-txt span {
     font-size: 13px;
+  }
+  #user-testimonials .ut-cards {
+    width: 60vw;
   }
 }
 @media (min-width: 460px) {
@@ -776,6 +779,9 @@ footer span {
   }
   .ra-h2 h2 {
     font-size: 15px;
+  }
+  #user-testimonials .ut-cards {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {

@@ -117,12 +117,14 @@
 #user-testimonials {
     margin-top: 3rem;
     .ut-cards {
-        display: flex;
-        justify-content: space-around;
+        margin: 0 auto;
+        width: 80vw;
+
         .card {
             background-color: rgb(215, 215, 206);
             color: $clr-principal;
-            width: 22%;
+            text-align: center;
+           
             .card-text {
                 width: 97%;
                 position: relative;
@@ -160,6 +162,11 @@
             span {
                 font-size: 13px;
             }
+        }
+    }
+    #user-testimonials {
+        .ut-cards {
+            width: 60vw;
         }
     }
 }
@@ -233,6 +240,11 @@
         border-radius: 10px;
         h2 {
             font-size: 15px;
+        }
+    }
+    #user-testimonials {
+        .ut-cards {
+            width: 100%;
         }
     }
 }
