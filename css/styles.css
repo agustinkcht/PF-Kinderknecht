@@ -139,7 +139,7 @@ footer span {
 .carousel-caption {
   margin-bottom: 18px;
 }
-.carousel-caption h5 {
+.carousel-caption h1 {
   font-size: 26px;
 }
 .carousel-caption p {
@@ -171,13 +171,13 @@ footer span {
   }
 }
 @media (min-width: 768px) {
-  .carousel-caption h5 {
+  .carousel-caption h1 {
     font-size: 25px;
     font-weight: 600;
   }
 }
 @media (min-width: 992px) {
-  .carousel-caption h5 {
+  .carousel-caption h1 {
     font-size: 28px;
     font-weight: 600;
   }
@@ -186,7 +186,7 @@ footer span {
   }
 }
 @media (min-width: 1200px) {
-  .carousel-caption h5 {
+  .carousel-caption h1 {
     font-size: 34px;
     font-weight: 600;
   }
@@ -299,7 +299,10 @@ footer span {
   color: #efefe3;
   border-radius: 15px;
   border: solid 0.1px;
-  transition: transform 2s;
+  transition: transform 0.7s;
+}
+#pricing-cards .card .card-body h2 {
+  font-size: 25px;
 }
 #pricing-cards .card .card-body .btn {
   background-color: rgb(224, 198, 143);
@@ -347,7 +350,7 @@ footer span {
   margin-bottom: 3px;
 }
 #pricing-cards .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 /*MEDIAS MOBILE*/
@@ -452,7 +455,7 @@ footer span {
   background: linear-gradient(to bottom, rgba(44, 43, 43, 0.283), rgba(224, 198, 143, 0.047));
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  height: 50vh;
+  height: 400px;
 }
 #download-section .download-icons {
   color: #efefe3;
@@ -501,7 +504,7 @@ footer span {
   background-color: rgba(44, 43, 43, 0.283);
   color: #efefe3;
 }
-#steps-section h2 {
+#steps-section h3 {
   text-align: center;
   margin-top: 1rem;
   font-size: 25px;
@@ -904,11 +907,22 @@ footer span {
   }
 }
 /* CONTACT */
+.contact-title h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .contact-forms {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
   gap: 2rem;
+}
+.contact-forms h2 {
+  font-size: 26px;
 }
 .contact-forms .form-inputs {
   padding: 20px;
@@ -945,6 +959,9 @@ footer span {
 
 /*media mobile y tablet*/
 @media (min-width: 576px) {
+  .contact-title h1 {
+    font-size: 32px;
+  }
   .contact-forms .sign-up-form, .contact-forms .login-form {
     width: 68%;
   }
@@ -955,6 +972,9 @@ footer span {
   }
 }
 @media (min-width: 768px) {
+  .contact-title h1 {
+    font-size: 36px;
+  }
   .contact-forms .sign-up-form, .contact-forms .login-form {
     width: 55%;
   }
@@ -969,7 +989,7 @@ footer span {
   .contact-forms .sign-up-form, .contact-forms .login-form {
     width: 33.5%;
   }
-  .contact-forms .sign-up-form h3, .contact-forms .login-form h3 {
+  .contact-forms .sign-up-form h2, .contact-forms .login-form h2 {
     margin-bottom: 20px;
   }
   .contact-forms .login-form {

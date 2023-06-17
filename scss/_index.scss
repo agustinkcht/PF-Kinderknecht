@@ -31,7 +31,7 @@
 .carousel-caption {
     margin-bottom: 18px;
 
-    h5 {
+    h1 {
         font-size: 26px;
     }
 
@@ -70,14 +70,14 @@
 }
 
 @media(min-width: 768px) {
-    .carousel-caption h5 {
+    .carousel-caption h1 {
         font-size: 25px;
         font-weight: 600;     
     }   
 }
 
 @media(min-width: 992px) {
-    .carousel-caption h5 {
+    .carousel-caption h1 {
         font-size: 28px;
         font-weight: 600;     
     }
@@ -87,7 +87,7 @@
 }
 
 @media (min-width: 1200px) {
-    .carousel-caption h5 {
+    .carousel-caption h1 {
         font-size: 34px;
         font-weight: 600;
     }

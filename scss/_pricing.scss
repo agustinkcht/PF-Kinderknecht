@@ -18,9 +18,12 @@
         border-radius: 15px;
         border: solid 0.1px;
         
-        transition: transform 2s;
+        transition: transform 0.7s;
 
         .card-body {
+            h2 {
+                font-size: 25px
+            }
             .btn {
                 @include button-principal;
             }
@@ -63,7 +66,7 @@
         }
 
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
      
     }

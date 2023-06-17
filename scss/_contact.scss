@@ -1,10 +1,24 @@
 /* CONTACT */
 
+.contact-title {
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
 .contact-forms {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
     gap: 2rem;
+
+    h2 {
+        font-size: 26px;
+    }
 
     .form-inputs {
         padding: 20px;
@@ -34,6 +48,11 @@
 
 /*media mobile y tablet*/
 @media (min-width: 576px) {
+    .contact-title {
+        h1 {
+            font-size: 32px;
+        }      
+    }
     .contact-forms {
         .sign-up-form, .login-form {
             width: 68%;
@@ -48,6 +67,11 @@
     }      
 }
 @media (min-width: 768px) {
+    .contact-title {
+        h1 {
+            font-size: 36px;
+        }      
+    }
     .contact-forms {
         .sign-up-form, .login-form {
             width: 55%;
@@ -66,7 +90,7 @@
         .sign-up-form, .login-form {
             width: 33.5%;
         
-            h3 {
+            h2 {
                 margin-bottom: 20px;
             }
         }
