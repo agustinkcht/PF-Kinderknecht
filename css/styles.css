@@ -858,9 +858,6 @@ footer span {
   .com-intro-banner .com-intro-banner-txt p {
     font-size: 19.5px;
   }
-  .ra-h2 h2 {
-    font-size: 24px;
-  }
 }
 @media (min-width: 1270px) {
   .com-intro-banner .com-intro-banner-txt h1 {
@@ -874,7 +871,7 @@ footer span {
     font-size: 18px;
   }
   .ra-h2 h2 {
-    font-size: 25px;
+    font-size: 22px;
     padding-top: 7px;
   }
 }
